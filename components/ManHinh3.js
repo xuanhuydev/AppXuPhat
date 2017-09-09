@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { Text, View, Button, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import Navigation from 'react-native-navigation';
+import { Text, View, StyleSheet,TouchableOpacity, Image } from 'react-native';
 
-export default class ManHinh1 extends Component {
+export default class ManHinh3 extends Component {
     constructor(props) {
         super(props)
         this.state = { showText: 'huy' };
     }
     click = () => {
         this.props.navigator.showModal({
-            screen: "example.ManHinh3", // unique ID registered with Navigation.registerScreen
+            screen: "example.ManHinh2", // unique ID registered with Navigation.registerScreen
             title: this.state.showText, // title of the screen as appears in the nav bar (optional)
             passProps: {}, // simple serializable object that will pass as props to the modal (optional)
             navigatorStyle: {}, // override the navigator style for the screen, see "Styling the navigator" below (optional)
@@ -21,8 +20,9 @@ export default class ManHinh1 extends Component {
     render() {
         return (
             <View style={styles.container}>
+
                 <TouchableOpacity onPress={this.click}>
-                    <Text>hello man hinh 1</Text>
+                    <Text>hello man hinh 3</Text>
                     <Image
                         source={require('../img/one.png')}
                         />
@@ -34,9 +34,10 @@ export default class ManHinh1 extends Component {
 }
 
 
+
 var styles = StyleSheet.create({
     container: {
-        backgroundColor: 'gray',
+        backgroundColor: 'red',
         flex: 1
     }
 })
