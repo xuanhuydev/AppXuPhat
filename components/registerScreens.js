@@ -1,13 +1,19 @@
 import { Navigation } from 'react-native-navigation';
 
-import ManHinh1 from './ManHinh1';
-import ManHinh2 from './ManHinh2';
-import ManHinh3 from './ManHinh3';
+import XeMay from './XeMay';
+import XeHoi from './XeHoi';
+import XeKhach from './XeKhach';
+import XeTai from './XeTai';
+import TabXe from './TabXe';
+import ChiTiet from './ChiTiet'
 
 
 // register all screens of the app (including internal ones)
 export function registerScreens() {
-  Navigation.registerComponent('example.ManHinh1', () => ManHinh1);
-  Navigation.registerComponent('example.ManHinh2', () => ManHinh2);
-  Navigation.registerComponent('example.ManHinh3', () => ManHinh3);
+  Navigation.registerComponent('example.XeMay', () => XeMay);
+  Navigation.registerComponent('example.XeHoi', () => XeHoi);
+  Navigation.registerComponent('example.XeKhach', () => XeKhach);
+  Navigation.registerComponent('example.XeTai', () => XeTai);
+  Navigation.registerComponent('example.TabXe', () => TabXe);
+  Navigation.registerComponent('example.ChiTiet', () => ChiTiet);
 }

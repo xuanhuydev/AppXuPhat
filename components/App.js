@@ -9,33 +9,33 @@ registerScreens(); // this is where you register all of your app's screens
 Navigation.startTabBasedApp({
   tabs: [
     {
-      label: 'One',
-      screen: 'example.ManHinh1', // this is a registered name for a screen
+      label: 'Xử Phạt',
+      screen: 'example.TabXe', // this is a registered name for a screen
       icon: require('../img/one.png'),
       topTabs: [{
-        screenId: 'example.ManHinh1',
-        title: 'Tab One',
+        screenId: 'example.XeMay',
+        title: 'Xe Máy',
       }, {
-        screenId: 'example.ManHinh2',
-        title: 'Tab Two',
+        screenId: 'example.XeHoi',
+        title: 'Xe Hơi',
       }],
-      title: 'Screen One'
+      title: 'Loại xe'
     },
     {
       label: 'One',
-      screen: 'example.ManHinh1', // this is a registered name for a screen
+      screen: 'example.XeHoi', // this is a registered name for a screen
       icon: require('../img/one.png'),
       title: 'Screen One'
     },
     {
       label: 'Two',
-      screen: 'example.ManHinh2',
+      screen: 'example.XeMay',
       icon: require('../img/two.png'),
       title: 'Screen Two'
     },
     {
       label: 'Two',
-      screen: 'example.ManHinh2',
+      screen: 'example.XeHoi',
       icon: require('../img/two.png'),
       title: 'Screen Two'
     }

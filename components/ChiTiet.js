@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-
-export default class ManHinh2 extends Component {
-
+export default class ChiTiet extends Component {
+    state = {}
     render() {
         return (
-            <View style={styles.container}><Text>hello man hinh 2</Text></View>
+            <View style={styles.container}>
+                <Text>chi tiet: {this.props.tenLoi}</Text>
+            </View>
+
         );
     }
 }
 
 
-
-
 var styles = StyleSheet.create({
     container: {
-        backgroundColor: 'blue',
+        backgroundColor: 'gray',
         flex: 1
     }
 })

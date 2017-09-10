@@ -5,7 +5,7 @@ import App from './components/App.js'
 export default class xphat extends Component {
   render() {
     return (
-      <App/>
+      <Text>aaa</Text>
     );
   }
 }
