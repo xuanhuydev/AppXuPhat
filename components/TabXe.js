@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import { Text, View, Button, TouchableOpacity, Image, StyleSheet, FlatList, TextInput } from 'react-native';
-import Item from './Item'
 
-export default TabXe = ({loaixe,clickItem}) => {
-    var mangData = [
-        { key: '0' },
-        { key: '1' },
-        { key: '2' }
-    ]
+
+export default TabXe = ({loaixe,clickItem,mangData}) => {
+
     return (
         <View>
             <FlatList
@@ -15,7 +11,7 @@ export default TabXe = ({loaixe,clickItem}) => {
                 renderItem={({ item }) => (
                     <TouchableOpacity onPress={clickItem}>
                         <View style={styles.item}>
-                            <Text>Hello màn hình {loaixe}</Text>
+                            <Text>Hel lo màn hình {loaixe} - {item.key}</Text>
                         </View>
                     </TouchableOpacity>
                 )}
